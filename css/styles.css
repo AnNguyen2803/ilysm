@@ -1,0 +1,196 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+:root{
+    --text-color: #fff;
+    --main-color: #96ca2d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent; 
+}
+  
+body{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #808080;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.visible{
+    visibility: visible !important;
+}
+.text-center {
+    text-align: center;
+}
+.text-middle{
+    vertical-align: middle;
+}
+.page-header{
+    background: no-repeat url('/images/background.jpg') center;
+    background-size: cover;
+}
+.header-navbar-top{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-top-panel-left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    width: 50%;
+}
+.navbar-top-panel-left div{
+    display: inline-block;
+}
+.navbar-top-panel-left div span i{
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.navbar-top-panel-left div a{
+    transition: all 300ms ease;
+    color: var(--text-color);
+}
+.navbar-top-panel-left div a:hover{
+    text-decoration: underline;
+}
+.navbar-top-pannel-right{
+    width: 15%;
+}
+.navbar-top-pannel-right div ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.list-inline > li {
+    padding-left: 11px;
+    padding-right: 11px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.list-inline > li:hover{
+    color: var(--main-color);
+}
+
+/* Navbar-inner */
+.header-navbar-inner{
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 2px 20px 0 rgba(100, 103, 121, 0.21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar-nav-wrap{
+    display: flex;
+    align-items: center;
+}
+.navbar-item {
+    list-style: none;
+    display: flex;
+    margin-right: 32px;
+}
+.navbar-item li{
+    position: relative;
+}
+.navbar-item li a {
+    position: relative;
+    display: block;
+    padding: 43px 27px;
+    color: #3e3f40;
+    background: transparent;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: .3s;
+}
+.navbar-item li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    transition: .3s;
+}
+.navbar-item li.active a::before{
+    background-color: var(--main-color);
+}
+.navbar-item li.active{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.navbar-item li a:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.navbar-item li:hover > a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    transition: .3s;
+    background-color: var(--main-color);
+}
+
+.navbar-search form{
+    position: absolute;
+    right: 100px;
+    top: calc(100% + 4px);
+    display: flex;
+    width: 350px;
+    visibility: hidden;
+}
+.navbar-search a i{
+    color: #000;
+}
+.navbar-search a i:hover{
+    color: var(--main-color);
+}
+.navbar-search form input{
+    padding: 11px 20px;
+    line-height: 1.2;
+    width: 350px;
+    /* border: none; */
+}
+.navbar-search .btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #96ca2d;
+    box-shadow: none;
+    cursor: pointer;
+}
+.navbar-search .btn i{
+    font-size: 16px;
+    color: var(--main-color);
+}
+.navbar-search .btn i:hover{
+    color: #f9b806;
+}
