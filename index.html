@@ -331,23 +331,23 @@ var ParticlePool = (function() {
 })(document.getElementById('pinkboard'));
 
 
-  // Khai báo một biến đếm để theo dõi số ảnh
-  let count = 1;
+  // // Khai báo một biến đếm để theo dõi số ảnh
+  // let count = 1;
 
-  // Hàm để thay đổi nguồn ảnh
-  function changeImage() {
-    // Tạo đường dẫn mới cho nguồn ảnh
-    const newSrc = `images/${count}.jpg`;
+  // // Hàm để thay đổi nguồn ảnh
+  // function changeImage() {
+  //   // Tạo đường dẫn mới cho nguồn ảnh
+  //   const newSrc = `images/${count}.jpg`;
     
-    // Gán đường dẫn mới cho thuộc tính src của thẻ img
-    document.getElementById('img').src = newSrc;
+  //   // Gán đường dẫn mới cho thuộc tính src của thẻ img
+  //   document.getElementById('img').src = newSrc;
     
-    // Tăng biến đếm lên 1, nếu biến đếm vượt qua 9 thì reset về 1
-    count = (count % 15) + 1;
-  }
+  //   // Tăng biến đếm lên 1, nếu biến đếm vượt qua 9 thì reset về 1
+  //   count = (count % 15) + 1;
+  // }
 
-  //Sử dụng hàm setInterval để gọi hàm changeImage sau mỗi 2 giây
-  setInterval(changeImage, 3000);
+  // //Sử dụng hàm setInterval để gọi hàm changeImage sau mỗi 2 giây
+  // setInterval(changeImage, 3000);
 
   </script>
   
